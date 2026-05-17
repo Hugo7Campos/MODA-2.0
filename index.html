@@ -4,32 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>CATALOGO STYLE NEWS</title>
+    <title>Style News — Tendências de Moda</title>
 </head>
 <body>
 
-    <header id="cabeçalho">
-        <h1>STYLE NEWS</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="catalogos.html">CATÁLOGO</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-            </ul>
-        </nav>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Style News</h1>
+        <p class="slogan">Tendências · Estilo · Moda</p>
     </header>
-    <main id="conteudo-principal">
 
-        <!-- BANNER -->
-        <section class="banner">
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogos.html">Catálogo</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- BANNER DE DESTAQUE -->
+        <div class="banner">
             <h2>Bem-vindo ao Style News</h2>
             <p>Seu portal de tendências de moda e estilo</p>
+        </div>
+
+        <!-- GALERIA DE ESTILO — fotos lado a lado -->
+        <section class="galeria">
+            <h2>Galeria de Estilo</h2>
+
+            <div class="galeria-grid">
+                <img class="foto-produto" src="IMAGENS/blusa1.jpg" alt="Blusa">
+                <img class="foto-produto" src="IMAGENS/calçaa.jpg" alt="Calça">
+                <img class="foto-produto" src="IMAGENS/botaa.jpg" alt="Bota">
+                <img class="foto-produto" src="IMAGENS/camisaa.jpg" alt="Camisa">
+                <img class="foto-produto" src="IMAGENS/bone.jpg" alt="Boné">
+            </div>
         </section>
 
         <!-- NOVIDADES -->
-        <section class="novidades">
-            <h2>Novidades e Notícias da Moda</h2>
-
+        <section class="noticias">
+            <h2>Novidades da Moda</h2>
             <p>
                 Aqui você encontra as últimas atualizações do mundo da moda,
                 tendências globais e lançamentos das principais marcas.
@@ -42,7 +60,7 @@
                 <li>Collabs entre marcas de luxo e esportivas crescem cada vez mais</li>
             </ul>
 
-            <h3>Notícias recentes</h3>
+            <h3>Notícias Recentes</h3>
 
             <ul>
                 <li>Nova coleção da Nike aposta em tecnologia e conforto urbano</li>
@@ -53,23 +71,9 @@
             </ul>
         </section>
 
-        <!-- GALERIA DE FOTOS -->
-        <section class="galeria">
-            <h2>Galeria de Estilo</h2>
-
-            <div class="galeria-grid">
-                <img class="foto-produto" src="IMAGENS/blusa1.jpg" alt="foto-produto">
-                <img class="foto-produto" src="IMAGENS/calçaa.jpg" alt="foto-produto">
-                <img class="foto-produto" src="IMAGENS/botaa.jpg" alt="foto-produto">
-                <img class="foto-produto" src="IMAGENS/camisaa.jpg" alt="foto-produto">
-                <img class="foto-produto" src="IMAGENS/bone.jpg" alt="foto-produto">
-            </div>
-        </section>
-
-        <!-- OBJETIVO -->
-        <section class="objetivo">
+        <!-- NOSSO OBJETIVO -->
+        <section>
             <h2>Nosso Objetivo</h2>
-
             <p>
                 O Style News tem como objetivo informar e inspirar pessoas
                 através das tendências de moda, trazendo conteúdos atuais,
@@ -81,7 +85,8 @@
 
     <!-- RODAPÉ -->
     <footer>
-        <p>© 2026 Style News - Todos os direitos reservados</p>
+        <span class="destaque-footer">Style News</span>
+        <p>© 2026 — Todos os direitos reservados</p>
         <p>Instagram: @stylenews</p>
     </footer>
 

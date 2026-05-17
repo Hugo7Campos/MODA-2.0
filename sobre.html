@@ -4,72 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>CATALOGO STYLE NEWS</title>
+    <title>Sobre — Style News</title>
 </head>
 <body>
 
-    <header id="cabeçalho">
-        <h1>STYLE NEWS</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="catalogos.html">CATÁLOGO</a></li>
-                <li><a href="sobre.html">SOBRE</a></li>
-            </ul>
-        </nav>
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Style News</h1>
+        <p class="slogan">Tendências · Estilo · Moda</p>
     </header>
 
-    <main id="sobre">
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogos.html">Catálogo</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
 
-    <section class="banner">
-        <div class="banner-content">
-            <h2>As Tendências de 2026 Já Chegaram</h2>
-            <p>Descubra o que está em alta nas passarelas internacionais e como adaptar para o seu guarda-roupa.</p>
-            <a href="catalogos.html" class="btn">Explorar Tendências</a>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- BANNER -->
+        <div class="banner">
+            <h2>As Tendências de 2026 Chegaram</h2>
+            <p>Descubra o que está em alta e como adaptar para o seu guarda-roupa</p>
         </div>
-    </section>
 
-    <section class="tendencias">
+        <!-- DESTAQUES DA ESTAÇÃO -->
+        <section>
             <h2>Destaques da Estação</h2>
-        <div class="grid-tendencias">
-            <article class="card">
-                <h4>O Retorno do Minimalismo</h4>
-                <p>Cores neutras, cortes retos e alfaiataria desconstruída dominam os looks urbanos deste mês.</p>
-            </article>
-            <article class="card">
-                <h4>Moda Sustentável</h4>
-                <p>Saiba como o upcycling e os tecidos ecológicos deixaram de ser nicho para virar o futuro da moda.</p>
-             </article>
-            <article class="card">
-                <h4>Acessórios Bold</h4>
-                <p>Maxi brincos e correntes pesadas chegam para transformar qualquer visual básico em alta costura.</p>
-            </article>
-        </div>
-    </section>
 
+            <div class="grid-tendencias">
 
-    <section class="sobre-nos">
-        <h2>Sobre Nós</h2>
-        <p>Conheça a história e os valores da <strong>STYLE NEWS</strong>. Nascemos com o propósito de democratizar a informação de moda, trazendo o que há de mais recente no universo fashion de forma leve, jovem e acessível.</p>
-    </section>
+                <div class="card-tendencia">
+                    <h4>Minimalismo</h4>
+                    <p>Cores neutras, cortes retos e alfaiataria desconstruída dominam os looks urbanos deste mês.</p>
+                </div>
 
-    <section class="email news">
-    <div class="email-news-content">
-        <h3>Fique por dentro do mundo da moda</h3>
-        <p>Receba as últimas tendências e editoriais do STYLE NEWS direto na sua caixa de entrada.</p>
-        
-            <form action="#" method="POST" class="email news-form">
+                <div class="card-tendencia">
+                    <h4>Moda Sustentável</h4>
+                    <p>O upcycling e os tecidos ecológicos deixaram de ser nicho para virar o futuro da moda.</p>
+                </div>
+
+                <div class="card-tendencia">
+                    <h4>Acessórios Bold</h4>
+                    <p>Maxi brincos e correntes pesadas chegam para transformar qualquer visual básico em alta costura.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section class="sobre-nos">
+            <h2>Sobre Nós</h2>
+            <p>
+                Conheça a história e os valores da <strong>Style News</strong>.
+                Nascemos com o propósito de democratizar a informação de moda,
+                trazendo o que há de mais recente no universo fashion de forma
+                leve, jovem e acessível.
+            </p>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <h3>Fique por dentro do mundo da moda</h3>
+            <p>Receba as últimas tendências direto na sua caixa de entrada</p>
+            <form action="#" method="POST">
                 <input type="email" name="email" placeholder="Digite seu e-mail" required>
-                <button type="submit">Enviar</button>
+                <button type="submit">Inscrever</button>
             </form>
+        </section>
+
+        <!-- BOTÃO DE NAVEGAÇÃO -->
+        <div class="botoes-nav">
+            <a href="catalogos.html" class="btn-principal">Ver Catálogo</a>
+            <a href="index.html" class="btn-secundario">Voltar para Home</a>
         </div>
-    </section>
 
-</main>
+    </main>
 
-    <footer class="rodape">
-        <small>© 2026 - STYLE NEWS</small>
+    <!-- RODAPÉ -->
+    <footer>
+        <p class="destaque-footer">Style News</p>
+        <p>© 2026 — Todos os direitos reservados</p>
     </footer>
 
-    </body>
+</body>
 </html>

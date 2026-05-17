@@ -1,131 +1,453 @@
+/* ============================================
+   STYLE NEWS — Layout inspirado na Vogue
+   Paleta: Preto | Branco | Dourado (#A39171)
+   ============================================ */
+
+/* 1. RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* 2. BODY */
 body {
-  font-family: helvetica, sans-serif;
-
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #FAFAFA;
+    color: #111111;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
-.main-container {
-  max-width:1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}  
-
-#cabeçalho {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 50px 50px 50px 50px; 
-  border-bottom: 3px solid #eaeaea;
-  margin-bottom: 50px;
+/* 3. CONTAINER — Largura máxima centralizada */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-#cabeçalho h1 {
-  font-family: Playfair Display, Georgia, serif;
-  font-size: 28px;
-  letter-spacing: 2px; /* Espaçamento entre letras */
-  font-weight: 700;
+/* ============================================
+   CABEÇALHO
+   ============================================ */
+header {
+    background-color: #111111;
+    padding: 18px 0 14px;
+    text-align: center;
+    border-bottom: 1px solid #333;
 }
 
-#cabeçalho nav ul{
-  display:flex;
-  list-style:none;
-  gap:30px;
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: normal;
+    letter-spacing: 12px;       /* Espaçamento largo estilo Vogue */
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-#cabeçalho nav ul a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: bold;
-  font-family: sans-serif;
-  position: relative;
-  padding-bottom: 6px;
-
-
+header p.slogan {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #A39171;
+    text-transform: uppercase;
+    margin-top: 4px;
 }
 
-#cabeçalho nav ul li a::after {
-content: '';
-position: absolute;
-bottom: 0;
-left: 0;
-width: 0;
-height: 2px;
-background-color: #000;
-transition: width 0.3s ease; 
-
-
+/* ============================================
+   NAVEGAÇÃO
+   ============================================ */
+nav {
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #111111;
+    text-align: center;
+    padding: 12px 0;
 }
 
-#cabeçalho nav ul li a:hover::after {
-  width: 100%; 
+nav ul {
+    list-style: none;
+    display: inline-block;  /* Centraliza a ul */
 }
 
-h2, h3 {
-  font-family: Playfair Display, Georgia, serif;
-  margin-top: 40px;
-  margin-bottom: 15px;
-  color:#111;
+nav ul li {
+    display: inline;
+    margin: 0 18px;
 }
 
-#cabeçalho + section h2{
-  font-size: 36px;
-  margin-top: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 4px;
 }
 
+/* Barrinha dourada que cresce ao passar o mouse */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #A39171;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #A39171;
+}
+
+/* ============================================
+   ÁREA PRINCIPAL
+   ============================================ */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* ============================================
+   BANNER (destaque escuro)
+   ============================================ */
+.banner {
+    background-color: #111111;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+.banner h2 {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    border: none;
+    padding: 0;
+}
+
+.banner p {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #A39171;
+    text-transform: uppercase;
+}
+
+/* ============================================
+   TÍTULOS
+   ============================================ */
+h2 {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #111111;   /* Linha grossa abaixo do título */
+}
+
+h3 {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+h4 {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+/* ============================================
+   PARÁGRAFOS E LISTAS
+   ============================================ */
 p {
-  font-size: 15px;
-  color: #555;
-  margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444444;
+    margin-bottom: 12px;
 }
 
 ul {
-  list-style: none;
-  margin-bottom: 30px;
+    list-style: none;
+    margin-bottom: 16px;
 }
 
-ul li{
-  life-style: none;
-  margin-bottom: 10px;
+ul li {
+    font-size: 14px;
+    color: #444;
+    padding: 7px 0;
+    border-bottom: 1px solid #EEEEEE;
+    padding-left: 14px;
 }
 
+ul li::before {
+    content: '—';
+    color: #A39171;
+    margin-right: 8px;
+}
 
-.galeria{
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 18px;
-  padding: 24px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  margin-bottom: 50px;
+/* ============================================
+   SEÇÕES GENÉRICAS
+   ============================================ */
+section {
+    background-color: #FFFFFF;
+    padding: 25px;              /* Espaçamento compacto */
+    margin-bottom: 20px;
+    border: 1px solid #E8E8E8;
+}
+
+/* ============================================
+   GALERIA DE ESTILO — Fotos lado a lado
+   ============================================ */
+.galeria {
+    margin-bottom: 20px;
 }
 
 .galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  align-items: stretch;
+    display: grid;
+    /* 5 colunas iguais — todas as fotos lado a lado */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;                   /* Espaço pequeno entre fotos, estilo editorial */
+    margin-top: 14px;
 }
 
-.galeria-grid img,
 .foto-produto {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 16px;
-  background-color: #f0f0f0;
-  border: 1px solid #ddd;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;          /* Recorta sem distorcer */
+    display: block;
 }
 
-.galeria-grid img:hover,
-.foto-produto:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.16);
+/* ============================================
+   GRID DO CATÁLOGO (catalogos.html)
+   ============================================ */
+.grid-catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
 }
 
+/* ============================================
+   CARD DE PRODUTO
+   ============================================ */
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    text-align: center;
+}
 
+.card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;          /* Imagem preenche sem distorcer */
+    display: block;
+}
+
+.card-info {
+    padding: 14px;
+    border-top: 1px solid #EEEEEE;
+}
+
+.card-info h3 {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.card-info p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   GRID DE TENDÊNCIAS (sobre.html)
+   ============================================ */
+.grid-tendencias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+    text-align: left;
+}
+
+.card-tendencia {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-top: 3px solid #111111;  /* Linha grossa em cima, estilo Vogue */
+}
+
+.card-tendencia h4 {
+    margin-bottom: 8px;
+}
+
+.card-tendencia p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   SEÇÃO "SOBRE NÓS"
+   ============================================ */
+.sobre-nos {
+    text-align: left;
+    border-left: 3px solid #111111;
+    padding-left: 20px !important;
+}
+
+/* ============================================
+   NEWSLETTER
+   ============================================ */
+.newsletter {
+    background-color: #111111;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.newsletter h3 {
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.newsletter p {
+    color: #A39171;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px 18px;
+    font-size: 13px;
+    border: 1px solid #A39171;
+    background-color: transparent;
+    color: #FFFFFF;
+    width: 260px;
+    outline: none;
+}
+
+.newsletter input[type="email"]::placeholder {
+    color: #888;
+}
+
+.newsletter button {
+    padding: 10px 22px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #A39171;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.newsletter button:hover {
+    background-color: #8A7A60;
+}
+
+/* ============================================
+   BOTÕES DE NAVEGAÇÃO
+   ============================================ */
+.botoes-nav {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.btn-principal,
+.btn-secundario {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 28px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 4px;
+}
+
+.btn-principal {
+    background-color: #111111;
+    color: #FFFFFF;
+    border: 1px solid #111111;
+}
+
+.btn-principal:hover {
+    background-color: #A39171;
+    border-color: #A39171;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: #111111;
+    border: 1px solid #111111;
+}
+
+.btn-secundario:hover {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+/* ============================================
+   RODAPÉ
+   ============================================ */
+footer {
+    background-color: #111111;
+    text-align: center;
+    padding: 24px 20px;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #888888;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+footer .destaque-footer {
+    color: #FFFFFF;
+    letter-spacing: 8px;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
